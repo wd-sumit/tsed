@@ -15,6 +15,11 @@ import * as pages from "./controllers/pages";
 
 @Configuration({
   ...config,
+  logger: {
+    debug: false,
+    logRequest: false,
+    requestFields: [],
+  },
   acceptMimes: ["application/json"],
   httpPort: process.env.PORT || 8083,
   httpsPort: false, // CHANGE

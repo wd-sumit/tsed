@@ -11,7 +11,8 @@ export const PostgresDataSource = new DataSource({
   port: 5432,
   username: "test",
   password: "test",
-  database: "test"
+  database: "test",
+  synchronize: true
 });
 
 registerProvider<DataSource>({
